@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "charset": "utf-8",
+        "target": "es5",
+        "module": "CommonJS",
+        "lib": ["DOM","ES2020","ScriptHost","ES5"],
+        // "allowJs": false, // compile javascript files by typescript compiler
+        // "checkJs": false, // check Javascript file
+        "jsx": "preserve",
+        "sourceMap": true,
+        "rootDirs": ["./app/src/**","./"],
+        "outDir": "./dist",
+        "declaration": false,
+        // "composite": true,
+        "removeComments": true,
+        "diagnostics": true,
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "strictNullChecks": true,
+        "pretty": true,
+        "watch": true,
+        "noEmitOnError": true // if error in ts file then js file not created
+        // "isolatedModules": true
+        // "noEmit": true // no output file will be created
+        // "declaration": true,// create .d.ts file
+        // "declarationMap": true // create sourcemap for each .d.ts file  .d.map.ts
+        // "alwaysStrict": true,
+        // "moduleResolution": "Node",
+    },
+    "exclude": [
+        "node_modules",
+        // "**/*.dev.ts"
+    ] //,
+    // "include": [
+    //     // "app.ts",
+    //     // "analytics.ts",
+    //     //"**/*"
+// ]
+}
