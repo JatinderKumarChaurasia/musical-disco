@@ -1,19 +1,34 @@
-class Person{
+class Person {
 
-    constructor(public name:string,public age:number,public email:string,private readonly id?:number){
+    private peoples: string[] = [];
+    constructor(public name: string, public age: number, public email: string, private readonly id?: number) {
         // property is also created and assigned passed value
-        if(id){
+        if (id) {
             this.id = id;
-        }else{
-            this.id = Math.random()*124994;
+        } else {
+            this.id = Math.random() * 124994;
         }
     }
-    getInfo(this:Person){
+    getInfo(this: Person) {
         console.log(`Person [ Id : ${this.id} \n Name : ${this.name} \n Age : ${this.age} \n Email : ${this.email}]`)
     }
-    getId(){
+    getId() {
         return this.id;
     }
+    addPeople(emp: string) {
+        this.peoples.push(emp);
+    }
+    getPeoples() {
+        console.log(this.peoples);
+    }
 }
-const persoasn = new Person('Aala',34,'skks');
+
+class ITPerson extends Person {
+    constructor(id:number){
+       super('id',32,'33',id);
+    }
+}
+const persoasn = new Person('Aala', 34, 'skks');
+persoasn.addPeople('Sekek');
 persoasn.getInfo();
+persoasn.getPeoples();
