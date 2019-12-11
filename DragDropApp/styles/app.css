@@ -1,0 +1,43 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+.center{
+    margin: auto;
+    padding: auto;
+}
+#project {
+    border: 1px solid green;
+    width: fit-content;
+    padding: 100px;
+}
+.form-control{
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    display: flex;
+}
+div label{
+    font-weight: 200;
+    padding: 10px;
+    z-index: 1;
+    float: left;
+    width: 100px;
+    display: block;
+    position: relative;
+}
+div input,textarea{
+    font-weight: 100;
+    padding: 10px;
+    z-index: 1;
+    float: inline-end;
+    width: 200px;
+    border: 1px solid rebeccapurple;
+    position: relative;
+}
+button{
+    color: green;
+    border: none;
+    width: 20rem;
+    font-size: medium;
+}
