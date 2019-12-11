@@ -4,6 +4,7 @@ module objects {
         console.log(data);
         logged = true;
     }
+    console.log(logged);
     sendAnalytics('Hello I am Sending Analytics!!!')
     const add = (...numbers: number[]) => {
         return numbers.reduce((prevVal, currVal) => {
