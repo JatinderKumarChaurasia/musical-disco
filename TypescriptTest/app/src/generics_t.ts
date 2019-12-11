@@ -46,4 +46,61 @@ console.log(countAndDescribe([]));
 function extractAndConvert<T extends object, U extends keyof T>(obj: T, key: U) {
     return obj[key];
 }
-console.log(extractAndConvert({fkkf:'ajjaj'},'fkkf'));
+console.log(extractAndConvert({ fkkf: 'ajjaj' }, 'fkkf'));
+
+class DataStorage<T extends string | boolean | number> {
+
+    private data: T[] = [];
+
+    addItem(item: T) {
+        this.data.push(item);
+    }
+
+    removeItem(item: T) {
+        if (this.data.indexOf(item) === -1) {
+            return;
+        }
+        this.data.splice(this.data.indexOf(item), 1);
+    }
+    getItems() {
+        return [...this.data];
+    }
+}
+
+const textStorage = new DataStorage<string>();
+textStorage.addItem('Hello');
+textStorage.addItem('Hsakka');
+console.log(textStorage.getItems());
+textStorage.removeItem('Hsakka');
+console.log('After Removal : ', textStorage.getItems());
+
+// const storageIt = new DataStorage<object>();
+// const ob = { name: 'Max' };
+// const ob2 = {name:'Menuy'};
+// storageIt.addItem(ob);
+// storageIt.addItem(ob2);
+// console.log(storageIt.getItems());
+// storageIt.removeItem(ob);
+// console.log('After Removal : ', storageIt.getItems());
+
+interface CourseGoal {
+    title: string;
+    description: string;
+    completeUntil: Date;
+}
+
+function createGoal(title: string, description: string, completeUntil: Date): CourseGoal {
+    // Partial makes CourseGoal properties optional
+    let courseGoal: Partial<CourseGoal> = {};
+    courseGoal.title = title;
+    courseGoal.description = description;
+    courseGoal.completeUntil = completeUntil;
+    return courseGoal as CourseGoal;
+    // return {title:title,description:description,completeUntil:completeUntil};
+}
+console.log(createGoal('Title','Title is title',new Date()));
+
+//makes T properties readOnly
+const names:Readonly<string[]> = ['Mx','Min'];
+// names.push('skks');
+// names.pop('ksks');
