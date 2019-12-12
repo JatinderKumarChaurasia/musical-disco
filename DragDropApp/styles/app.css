@@ -5,11 +5,22 @@
 .center{
     margin: auto;
     padding: auto;
+    width: fit-content;
+    border: 1px solid green;
+
 }
-#project {
+#project-input {
     border: 1px solid green;
     width: fit-content;
     padding: 100px;
+}
+form{
+    display: grid;
+    margin: 100px;
+    border: 1px solid black;
+    width: 26rem;
+    background-color: whitesmoke;
+    padding: 20px;
 }
 .form-control{
     text-align: center;
@@ -18,7 +29,7 @@
     display: flex;
 }
 div label{
-    font-weight: 200;
+    font-weight: bolder;
     padding: 10px;
     z-index: 1;
     float: left;
@@ -38,6 +49,23 @@ div input,textarea{
 button{
     color: green;
     border: none;
-    width: 20rem;
+    background-color: darkgray;
+    width: 10rem;
+    height: 2rem;
+    margin: auto;
     font-size: medium;
+    text-align: center;
+}
+header{
+    background-color: cadetblue;
+    color: green;
+}
+li{
+    list-style-type: none;
+    background-color: azure;
+    text-align: left;
+    padding: 10px;
+    width: 30rem;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
 }
