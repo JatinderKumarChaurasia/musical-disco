@@ -19,7 +19,7 @@ type Listener = (projects:Project[])=> void;
 
 class Project {
 
-    // Automatically instantiated
+    // Automatically initialized
     constructor(public id:string,public title:string,public description:string,public people:number,public projectStatus:ProjectStatus){}
 }
 // ----------------------- Project State Management -----------------------------------------------
@@ -120,6 +120,23 @@ function AutoBind(_target: any, _methodName: string | Symbol, descriptor: Proper
 
 // --------------------------------- Decorators End -----------------------------------------------
 
+// -------------------- Component Base Class ------------------------------------------------------
+
+class Component<T extends HTMLElement,U extends HTMLElement> {
+    templateElement: HTMLTemplateElement;
+    hostElement: T;
+    htmlElement: U;
+
+    constructor(templateElementId?:string,hostElementId?:string,newElementId?:string){
+        if(templateElementId){
+            this.templateElement = document.getElementById(templateElementId)! as HTMLTemplateElement;
+        }
+        if(hostElementId){
+            this.hostElement = document.getElementById(hostElementId)! as T;
+        }
+    }
+}
+
 // ---------------------------------- Main --------------------------------------------------------
 
 class ProjectInput {
@@ -218,7 +235,8 @@ class ProjectInput {
 
     }
 }
-// --------- ProjectList ------------------
+
+// ----------------------------- ProjectList ------------------------------------------------------
 
 class ProjectList {
 
