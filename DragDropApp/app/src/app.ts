@@ -1,3 +1,12 @@
+/**
+ * 
+ * @author Jatinder Kumar Chaurasia
+ * @file app.ts
+ * @description Drag and Drop
+ * @license none
+ * 
+ */
+
 // -------------------------- Enum-ProjectStatus --------------------------------------------------
 
 enum ProjectStatus {ACTIVE='active',COMPLETED='completed'};
