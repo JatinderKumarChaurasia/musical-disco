@@ -1,3 +1,12 @@
+/**
+ * 
+ * @author Jatinder Kumar Chaurasia
+ * @file tsconfig.json
+ * @description Drag and Drop
+ * @license none
+ * 
+ */
+
 {
     "compilerOptions": {
         "strict": true,
@@ -8,11 +17,12 @@
         "noImplicitThis": true,
         "charset": "utf-8",
         "target": "es6",
-        "module": "CommonJS",
+        "module": "AMD",
         "lib": ["DOM","ES2020","ScriptHost","ES5"],
         "jsx": "preserve",
         "sourceMap": true,
         "rootDirs": ["./app/src/**","./"],
+        "outFile": "./dist/bundle.js", // contacatenating namespaces into one javascript file
         "outDir": "./dist",
         "declaration": false,
         "removeComments": true,
