@@ -2,11 +2,16 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+body{
+    padding: 20px;
+    color: blue;
+}
 .center{
     margin: auto;
-    padding: auto;
+    padding: 20px;
     width: fit-content;
-    border: 1px solid green;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
+    border-radius: 20px;
 
 }
 #project-input {
@@ -17,10 +22,13 @@
 form{
     display: grid;
     margin: 100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 26rem;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 20px;
+    border-radius: 20px;
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 5px 5px cornsilk;
 }
 .form-control{
     text-align: center;
@@ -57,15 +65,40 @@ button{
     text-align: center;
 }
 header{
-    background-color: cadetblue;
+    text-align: center;
+    background-color: white;
     color: green;
+    width: 30rem;
+    box-shadow: 1px 1px 1px 3px whitesmoke;
+}
+.projects {
+    width: 30rem;
+    margin: auto;
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+    border: 1px solid green;
+    border-top: none;
+    text-align: center;
 }
 li{
     list-style-type: none;
-    background-color: azure;
-    text-align: left;
+    background-color: green;
+    text-align: center;
     padding: 10px;
-    width: 30rem;
-    margin: 10px;
+    width: 24rem;
+    margin: 2px;
     box-shadow: 5px 5px 5px 5px whitesmoke;
+}
+li:hover{
+    background-color: white;
+    box-shadow: 2px 2px 1px 1px green;
+}
+.droppable{
+    background-color: whitesmoke;
+}
+
+#completed-projects .droppable {
+    background-color: whitesmoke;
 }

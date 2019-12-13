@@ -331,15 +331,15 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> implements Drag
         // ProjectState Listener
         // Adding Drag and Drop Listeners
         this.htmlElement.addEventListener('dragover', this.dragOverHandler);
-        this.htmlElement.addEventListener('dragleave', this.dragLeaveHandler);
         this.htmlElement.addEventListener('drop', this.dropHandler);
+        this.htmlElement.addEventListener('dragleave', this.dragLeaveHandler);
 
         projectState.addListener((projects: Project[]) => {
-            const relProjects = projects.filter((projec) => {
+            const relProjects = projects.filter((project) => {
                 if (this.type === 'active') {
-                    return projec.projectStatus === ProjectStatus.ACTIVE;
+                    return project.projectStatus === ProjectStatus.ACTIVE;
                 }
-                return projec.projectStatus === ProjectStatus.COMPLETED;
+                return project.projectStatus === ProjectStatus.COMPLETED;
             });
             this.assignedProjects = relProjects;
             this.renderProject();
@@ -353,8 +353,8 @@ class ProjectList extends Component<HTMLDivElement, HTMLElement> implements Drag
     }
 
     private renderProject() {
-        const listElement = document.getElementById(`${this.type}-project-list`)! as HTMLUListElement;
-        listElement.innerHTML = '';
+        // const listElement = document.getElementById(`${this.type}-project-list`)! as HTMLUListElement;
+        // this.listElement.innerHTML = '';
         // this.htmlElement.innerHTML = '';
         for (const projectIte of this.assignedProjects) {
             // const listItem = document.createElement('li');
