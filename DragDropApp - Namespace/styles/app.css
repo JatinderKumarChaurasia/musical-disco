@@ -1,0 +1,104 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+body{
+    padding: 20px;
+    color: blue;
+}
+.center{
+    margin: auto;
+    padding: 20px;
+    width: fit-content;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
+    border-radius: 20px;
+
+}
+#project-input {
+    border: 1px solid green;
+    width: fit-content;
+    padding: 100px;
+}
+form{
+    display: grid;
+    margin: 100px;
+    /* border: 1px solid black; */
+    width: 26rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 5px 5px cornsilk;
+}
+.form-control{
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    display: flex;
+}
+div label{
+    font-weight: bolder;
+    padding: 10px;
+    z-index: 1;
+    float: left;
+    width: 100px;
+    display: block;
+    position: relative;
+}
+div input,textarea{
+    font-weight: 100;
+    padding: 10px;
+    z-index: 1;
+    float: inline-end;
+    width: 200px;
+    border: 1px solid rebeccapurple;
+    position: relative;
+}
+button{
+    color: green;
+    border: none;
+    background-color: darkgray;
+    width: 10rem;
+    height: 2rem;
+    margin: auto;
+    font-size: medium;
+    text-align: center;
+}
+header{
+    text-align: center;
+    background-color: white;
+    color: green;
+    width: 30rem;
+    box-shadow: 1px 1px 1px 3px whitesmoke;
+}
+.projects {
+    width: 30rem;
+    margin: auto;
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+    border: 1px solid green;
+    border-top: none;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    width: 24rem;
+    margin: 2px;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+}
+li:hover{
+    background-color: white;
+    box-shadow: 2px 2px 1px 1px green;
+}
+.droppable{
+    background-color: whitesmoke;
+}
+
+#completed-projects .droppable {
+    background-color: whitesmoke;
+}

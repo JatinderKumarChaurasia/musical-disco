@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "charset": "utf-8",
+        "target": "es6",
+        "module": "CommonJS",
+        "lib": ["DOM","ES2020","ScriptHost","ES5"],
+        "jsx": "preserve",
+        "sourceMap": true,
+        "rootDirs": ["./app/src/**","./"],
+        "outDir": "./dist",
+        "declaration": false,
+        "removeComments": true,
+        "diagnostics": true,
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "strictNullChecks": true,
+        "pretty": true,
+        "watch": true,
+        "noEmitOnError": true 
+    },
+    "exclude": [
+        "node_modules",
+    ]
+}
