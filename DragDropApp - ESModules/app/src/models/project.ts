@@ -7,17 +7,15 @@
  * 
  */
 
-namespace App {
+// -------------------------- Enum-ProjectStatus --------------------------------------------------
 
-    // -------------------------- Enum-ProjectStatus --------------------------------------------------
+export enum ProjectStatus { ACTIVE = 'active', COMPLETED = 'completed' };
 
-    export enum ProjectStatus { ACTIVE = 'active', COMPLETED = 'completed' };
+// ---------------------------- Project -----------------------------------------------------------
 
-    // ---------------------------- Project -----------------------------------------------------------
+export class Project {
 
-    export class Project {
-
-        // Automatically initialized
-        constructor(public id: string, public title: string, public description: string, public people: number, public projectStatus: ProjectStatus) { }
-    }
+    // Automatically initialized
+    constructor(public id: string, public title: string, public description: string, public people: number, public projectStatus: ProjectStatus) { }
 }
+

@@ -1,43 +1,35 @@
-/**
- * 
- * @author Jatinder Kumar Chaurasia
- * @file tsconfig.json
- * @description Drag and Drop
- * @license none
- * 
- */
-
 {
-    "compilerOptions": {
-        "strict": true,
-        "noImplicitAny": true,
-        "strictBindCallApply": true,
-        "strictFunctionTypes": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "charset": "utf-8",
-        "target": "es6",
-        "module": "AMD",
-        "lib": ["DOM","ES2020","ScriptHost","ES5"],
-        "jsx": "preserve",
-        "sourceMap": true,
-        "rootDirs": ["./app/src/**","./"],
-        "outFile": "./dist/bundle.js", // contacatenating namespaces into one javascript file
-        "outDir": "./dist",
-        "declaration": false,
-        "removeComments": true,
-        "diagnostics": true,
-        "experimentalDecorators": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "importHelpers": true,
-        "downlevelIteration": true,
-        "strictNullChecks": true,
-        "pretty": true,
-        "watch": true,
-        "noEmitOnError": true 
-    },
-    "exclude": [
-        "node_modules",
-    ]
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "charset": "utf-8",
+    "target": "es6",
+    "module": "es2015" ,
+    "lib": [
+      "DOM",
+      "ES6",
+      "ScriptHost"
+    ],
+    "jsx": "preserve",
+    "sourceMap": true,
+    // "outFile": "./dist/bundle.js", // contacatenating namespaces into one javascript file
+    "outDir": "./dist" ,
+    "rootDirs": ["./app/src/**","./"],
+    "removeComments": true,
+    "diagnostics": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "watch": true,
+    "noEmitOnError": true ,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules" // would be the default
+  ]
 }
