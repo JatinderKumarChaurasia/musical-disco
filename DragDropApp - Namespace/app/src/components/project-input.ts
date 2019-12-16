@@ -7,6 +7,11 @@
  * 
  */
 
+/// <reference path='../components/base-component.ts' />
+/// <reference path='../decorators/autobind.ts' />
+/// <reference path='../utils/validation.ts' />
+/// <reference path='../state/project-state.ts' />
+
 namespace App {
 
     // ---------------------------------- Main --------------------------------------------------------
