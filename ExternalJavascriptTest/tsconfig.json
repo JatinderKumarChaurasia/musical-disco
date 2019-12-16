@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "charset": "utf-8",
+    "target": "es6",
+    "module": "es2015" ,
+    "lib": [
+      "DOM",
+      "ES6",
+      "ScriptHost"
+    ],
+    "jsx": "preserve",
+    "sourceMap": true,
+    // "outFile": "./dist/bundle.js", // contacatenating namespaces into one javascript file
+    "outDir": "./dist" ,
+    // "rootDirs": ["./app/src/**","./"], // webpack will manage this
+    "removeComments": true,
+    "diagnostics": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "watch": true,
+    "noEmitOnError": true ,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules" // would be the default
+  ]
+}
