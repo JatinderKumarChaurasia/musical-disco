@@ -5,9 +5,9 @@
 
   `` npm run build --> to build the product``
 
-  ``` to run in production mode 
-  
-     change build: 'webpack --config webpack.config.prod.js'
+  ``` 
+    -- to run in production mode 
+    -- change build: 'webpack --config webpack.config.prod.js'
   ```
 
   --- to run the server - npm start
