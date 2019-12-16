@@ -18,7 +18,7 @@
     "sourceMap": true,
     // "outFile": "./dist/bundle.js", // contacatenating namespaces into one javascript file
     "outDir": "./dist" ,
-    "rootDirs": ["./app/src/**","./"],
+    // "rootDirs": ["./app/src/**","./"], // webpack will manage this
     "removeComments": true,
     "diagnostics": true,
     "experimentalDecorators": true,

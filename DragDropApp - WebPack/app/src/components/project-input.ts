@@ -7,10 +7,10 @@
  * 
  */
 
-import Component from './base-component.js';
-import { AutoBind as autobind } from '../decorators/autobind.js'
-import { projectState } from '../state/project-state.js';
-import * as Validations from '../utils/validation.js';
+import Component from './base-component';
+import { AutoBind as autobind } from '../decorators/autobind'
+import { projectState } from '../state/project-state';
+import * as Validations from '../utils/validation';
 
 // ---------------------------------- Main --------------------------------------------------------
 

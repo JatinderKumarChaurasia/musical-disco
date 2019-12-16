@@ -7,10 +7,10 @@
  * 
  */
 
-import Component from './base-component.js';
-import { Project } from '../models/project.js';
-import { Draggable } from '../models/drag-drop.js';
-import { AutoBind } from '../decorators/autobind.js';
+import Component from './base-component';
+import { Project } from '../models/project';
+import { Draggable } from '../models/drag-drop';
+import { AutoBind } from '../decorators/autobind';
 
 //------------------------------ ProjectItem ------------------------------------------------------
 
