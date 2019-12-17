@@ -8,7 +8,7 @@
     "noImplicitThis": true,
     "charset": "utf-8",
     "target": "es6",
-    "module": "es2015" ,
+    "module": "CommonJS" ,
     "lib": [
       "DOM",
       "ES6",
@@ -18,7 +18,7 @@
     "sourceMap": true,
     // "outFile": "./dist/bundle.js", // contacatenating namespaces into one javascript file
     "outDir": "./dist" ,
-    // "rootDirs": ["./app/src/**","./"], // webpack will manage this
+    "rootDirs": ["./app/src/**","./"], // webpack will manage this
     "removeComments": true,
     "diagnostics": true,
     "experimentalDecorators": true,
@@ -27,7 +27,8 @@
     "pretty": true,
     "watch": true,
     "noEmitOnError": true ,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "classic"
   },
   "exclude": [
     "node_modules" // would be the default

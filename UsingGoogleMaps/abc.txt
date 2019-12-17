@@ -1,0 +1,59 @@
+// in package.json
+
+    "lodash": "^4.17.15"
+    "@types/lodash": "^4.14.149",
+    "class-transformer": "^0.2.3",
+    "reflect-metadata": "^0.1.13",
+    "class-validator": "0.11.0"
+
+// In app.ts 
+
+// import _ from 'lodash';
+import { Product } from './product.model';
+import 'reflect-metadata';
+import { plainToClass } from "../../node_modules/class-transformer/index";
+import { validate } from '../../node_modules/class-validator/index';
+
+// console.log(_.shuffle([1, 2, 3]));
+
+const products = [
+    { title: 'Hello', price: 34 },
+    { title: 'Hello1', price: 341 },
+    { title: 'Hello2', price: 342 }
+]
+declare var GLOBAL: any;
+console.log(GLOBAL);
+var prod = new Product('', -45);
+validate(prod).then((err) => {
+    if (err.length > 0) { console.log(err); }
+    prod.getInformation();
+});
+
+const loadedProducts = products.map((product) => {
+    return new Product(product.title, product.price);
+});
+let productss = plainToClass(Product, products);
+console.log(productss);
+console.log(loadedProducts);
+
+// Product class
+
+import { IsNotEmpty, IsNumber, IsNegative } from '../../node_modules/class-validator/index';
+export class Product {
+    @IsNotEmpty()
+    title: string;
+    @IsNumber()
+    @IsNegative()
+    price: number;
+
+    constructor(title: string, price: number) { this.title = title; this.price = price; }
+    getInformation(): void {
+        console.log(`Product Information : [\n Title: ${this.title} \n Price: ${this.price}]`);
+    }
+}
+
+// In index.html
+    "@types/lodash": "^4.14.149",
+    "class-transformer": "^0.2.3",
+    "reflect-metadata": "^0.1.13",
+    "class-validator": "0.11.0"

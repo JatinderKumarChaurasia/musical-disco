@@ -6,13 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack"
   },
   "author": "Jatinder Kumar Chaurasia",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "lite-server": "^2.5.4",
     "typescript": "^3.7.3",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
