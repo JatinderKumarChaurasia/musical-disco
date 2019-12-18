@@ -10,7 +10,10 @@
   },
   "author": "Jatinder Kumar Chaurasia",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/googlemaps": "^3.38.1",
+    "axios": "^0.19.0"
+  },
   "devDependencies": {
     "typescript": "^3.7.3",
     "webpack": "^4.41.3",
